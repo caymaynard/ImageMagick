@@ -614,7 +614,6 @@ jobs:
           subject-path: |
             ${{github.workspace}}/artifacts/*.7z
             ${{github.workspace}}/artifacts/*.exe
-            ${{github.workspace}}/artifacts/*.msixbundle
             ${{github.workspace}}/artifacts/*.AppImage
 
       - name: Save provenance as an artifact
@@ -634,7 +633,6 @@ jobs:
             --notes "$VERSION" \
             ${{github.workspace}}/artifacts/*.7z \
             ${{github.workspace}}/artifacts/*.exe \
-            ${{github.workspace}}/artifacts/*.msixbundle \
             ${{github.workspace}}/artifacts/*.AppImage \
             ${{github.workspace}}/artifacts/*.intoto.jsonl
 
